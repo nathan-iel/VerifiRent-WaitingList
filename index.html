@@ -1,0 +1,1672 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="image.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VerifiRent — Know Before You Rent | Neighbourhood Intelligence</title>
+  <meta name="description"
+    content="VerifiRent helps renters understand what it is actually like to live at a particular address or neighbourhood before committing. Real data, human verified, AI explained. Launching in Lagos.">
+
+  <!-- Typography Preconnect & Stylesheet -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <div class="site-wrapper">
+
+    <!-- ==========================================================================
+         NAVIGATION HEADER
+         ========================================================================== -->
+    <header class="site-header" id="siteHeader">
+      <div class="container-custom">
+        <div class="header-inner">
+          <!-- Brand Logo -->
+          <a href="#hero" class="brand-logo" style="display: flex; align-items: center; gap: 0.65rem;"
+            aria-label="VerifiRent Home">
+            <svg width="34" height="34" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"
+              style="flex-shrink: 0; display: block;">
+              <path d="M 23 44 C 20 54 22 66 28 74 C 36 84 50 89 62 87 C 72 84 81 76 84 66 C 87 56 86 46 81 37"
+                stroke="#0D382B" stroke-width="6" stroke-linecap="round" />
+              <rect x="66" y="22" width="9" height="18" fill="#0D382B" rx="1.5" />
+              <path d="M 18 44 L 50 18 L 82 44" stroke="#0D382B" stroke-width="6.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <rect x="44" y="38" width="4.5" height="4.5" fill="#0D382B" rx="0.5" />
+              <rect x="51.5" y="38" width="4.5" height="4.5" fill="#0D382B" rx="0.5" />
+              <rect x="44" y="45.5" width="4.5" height="4.5" fill="#0D382B" rx="0.5" />
+              <rect x="51.5" y="45.5" width="4.5" height="4.5" fill="#0D382B" rx="0.5" />
+              <path d="M 37 59 L 51 73 L 90 32" stroke="#8A9A90" stroke-width="7" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+            <div style="display: flex; flex-direction: column;">
+              <div
+                style="font-size: 1.4rem; font-weight: 800; letter-spacing: -0.03em; line-height: 1.05; display: flex; align-items: baseline;">
+                <span style="color: #0D382B;">Verifi</span><span style="color: #6F7E75; font-weight: 600;">rent</span>
+              </div>
+              <span
+                style="font-size: 0.55rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #5C6A63; margin-top: 0.15rem;">VERIFY.
+                RENT. RELAX.</span>
+            </div>
+          </a>
+
+          <!-- Desktop Navigation -->
+          <nav class="nav-desktop" aria-label="Main Navigation">
+            <a href="#hero" class="nav-link">Home</a>
+            <a href="#how-it-works" class="nav-link">How It Works</a>
+            <a href="#intelligence" class="nav-link">Intelligence</a>
+            <a href="#compare" class="nav-link">Compare</a>
+            <a href="#trust" class="nav-link">Trust & Accuracy</a>
+          </nav>
+
+          <!-- Desktop CTA -->
+          <div class="cta-desktop">
+            <a href="https://form.typeform.com/to/t3echFdS" target="_blank" rel="noopener noreferrer"
+              class="btn-primary btn-sm">Join the Waitlist</a>
+          </div>
+
+          <!-- Mobile Toggle Button -->
+          <button type="button" id="mobileMenuBtn" class="mobile-toggle-btn" aria-label="Toggle Navigation Menu"
+            aria-expanded="false">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="4" x2="20" y1="12" y2="12"></line>
+              <line x1="4" x2="20" y1="6" y2="6"></line>
+              <line x1="4" x2="20" y1="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Dropdown Menu -->
+      <div id="mobileMenu" class="nav-mobile-menu" style="display: none;">
+        <a href="#hero" class="nav-link">Home</a>
+        <a href="#how-it-works" class="nav-link">How It Works</a>
+        <a href="#intelligence" class="nav-link">Intelligence</a>
+        <a href="#compare" class="nav-link">Compare</a>
+        <a href="#trust" class="nav-link">Trust & Accuracy</a>
+        <div style="padding-top: 0.75rem; border-top: 1px solid var(--color-border);">
+          <a href="https://form.typeform.com/to/t3echFdS" target="_blank" rel="noopener noreferrer" class="btn-primary"
+            style="width: 100%;">Join the Waitlist</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ==========================================================================
+         MAIN CONTENT
+         ========================================================================== -->
+    <main>
+
+      <!-- 1. HERO SECTION -->
+      <section id="hero" class="hero-section">
+        <div class="container-custom">
+          <div class="hero-grid">
+
+            <!-- Left Hero Content -->
+            <div style="max-width: 580px;">
+              <div class="eyebrow">
+                <span class="eyebrow-pill">
+                  <span class="eyebrow-pill-dot"></span>NEIGHBOURHOOD INTELLIGENCE
+                </span>
+              </div>
+              <h1
+                style="font-size: clamp(2.5rem, 5.2vw, 3.85rem); font-weight: 700; line-height: 1.1; letter-spacing: -0.04em; color: var(--color-text); margin-bottom: 1.25rem;">
+                Know Before <br>
+                <span class="font-editorial" style="font-weight: 400; color: var(--color-forest);">You Rent.</span>
+              </h1>
+              <p
+                style="font-size: clamp(1.05rem, 1.4vw, 1.2rem); line-height: 1.6; color: var(--color-text-secondary); margin-bottom: 1.25rem; max-width: 490px;">
+                Understand what it's really like to live at an address before you commit. Evidence-backed living
+                conditions that help Lagos and Nigeria renters find the right home faster and decide with full
+                confidence.
+              </p>
+
+              <!-- Hero Tags -->
+              <div class="hero-badge-list">
+                <span class="hero-tag">Find homes faster</span>
+                <span class="hero-tag">Decide with confidence</span>
+                <span class="hero-tag">Lets shield You From the bad surprises</span>
+              </div>
+
+              <!-- Hero Waitlist Form (Inline) -->
+              <div class="waitlist-form-wrapper" style="margin-bottom: 1.75rem; max-width: 560px;">
+                <form id="heroWaitlistForm" novalidate data-source="hero">
+                  <div style="display: flex; gap: 0.75rem; align-items: flex-start;">
+                    <div style="flex: 1; width: 100%;">
+                      <label for="hero-email" style="display: none;">Email address</label>
+                      <input id="hero-email" type="email" placeholder="Enter your email address" class="form-input"
+                        required style="height: 3rem;">
+                    </div>
+                    <a href="https://form.typeform.com/to/t3echFdS" target="_blank" rel="noopener noreferrer"
+                      class="btn-primary"
+                      style="height: 3rem; white-space: nowrap; padding-left: 1.5rem; padding-right: 1.5rem;">
+                      <span>Join the Waitlist</span>
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14"></path>
+                        <path d="m12 5 7 7-7 7"></path>
+                      </svg>
+                    </a>
+                  </div>
+                  <div
+                    style="margin-top: 0.5rem; display: flex; align-items: center; gap: 0.5rem; font-size: 0.75rem; color: var(--color-text-muted);">
+                    <span>Find houses faster</span>
+                    <span>•</span>
+                    <span>Decide better</span>
+                    <span>•</span>
+                    <span>Launching in Lagos</span>
+                  </div>
+                  <div class="waitlist-error"
+                    style="display: none; margin-top: 0.75rem; align-items: center; gap: 0.5rem; font-size: 0.85rem; color: #DC2626; padding: 0.5rem 0.75rem; background-color: #FEF2F2; border-radius: var(--radius-sm); border: 1px solid #FEE2E2;">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <line x1="12" x2="12" y1="8" y2="12"></line>
+                      <line x1="12" x2="12.01" y1="16" y2="16"></line>
+                    </svg>
+                    <span class="error-text">Please enter a valid email address.</span>
+                  </div>
+                </form>
+              </div>
+
+              <!-- Trust Checks -->
+              <div class="hero-trust-bar">
+                <div style="display: flex; align-items: center; gap: 0.4rem;">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--color-verified)"
+                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="m9 12 2 2 4-4"></path>
+                  </svg>
+                  <span style="font-size: 0.8rem; font-weight: 600; color: var(--color-text-secondary);">Human Verified
+                    Data</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.4rem;">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-sage-accent)"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                      d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z" />
+                    <path d="M20 2v4" />
+                    <path d="M22 4h-4" />
+                    <circle cx="4" cy="20" r="2" />
+                  </svg>
+                  <span style="font-size: 0.8rem; font-weight: 600; color: var(--color-text-secondary);">AI Explained
+                    Realities</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Hero Card (Audit Visualizer) -->
+            <div style="position: relative;">
+              <div class="card-clean glass-panel"
+                style="padding: clamp(1.5rem, 3vw, 2.25rem); position: relative; box-shadow: 0 8px 32px -4px rgba(13, 56, 43, 0.08); border: 1px solid rgba(13, 56, 43, 0.12);">
+
+                <!-- Card Header -->
+                <div
+                  style="display: flex; align-items: flex-start; justify-content: space-between; padding-bottom: 1.25rem; border-bottom: 1px solid var(--color-border); margin-bottom: 1.5rem;">
+                  <div>
+                    <div
+                      style="display: flex; align-items: center; gap: 0.4rem; font-size: 0.75rem; font-weight: 600; color: var(--color-text-subtle); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.25rem;">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--color-forest)"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                          d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+                        <circle cx="12" cy="10" r="3" />
+                      </svg>
+                      NEIGHBOURHOOD AUDIT
+                    </div>
+                    <h2
+                      style="font-size: 1.4rem; font-weight: 700; color: var(--color-text); letter-spacing: -0.02em; line-height: 1.2;">
+                      IKEJA, LAGOS</h2>
+                    <div style="font-size: 0.8rem; color: var(--color-text-muted);">GRA & Allen Corridor • Updated 4
+                      days ago</div>
+                  </div>
+                  <div class="badge-verified">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <path d="m9 12 2 2 4-4"></path>
+                    </svg>
+                    <span>Ground Verified</span>
+                  </div>
+                </div>
+
+                <!-- Score Container -->
+                <div class="hero-score-inner">
+                  <div class="score-ring-container"
+                    style="display: inline-flex; flex-direction: column; align-items: center; justify-content: center; position: relative;">
+                    <div style="position: relative; width: 120px; height: 120px;">
+                      <svg width="120" height="120" viewBox="0 0 120 120"
+                        style="transform: rotate(-90deg); transform-origin: 50% 50%;">
+                        <circle class="score-circle-bg" cx="60" cy="60" r="56" stroke-width="8"></circle>
+                        <circle id="heroScoreCircleFill" class="score-circle-fill" cx="60" cy="60" r="56"
+                          stroke-width="8"></circle>
+                      </svg>
+                      <div
+                        style="position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
+                        <div class="score-number"
+                          style="font-size: 2.25rem; font-weight: 700; line-height: 1; letter-spacing: -0.04em; color: var(--color-text);">
+                          82</div>
+                        <div
+                          style="font-size: 0.75rem; font-weight: 500; color: var(--color-text-subtle); margin-top: 0.25rem;">
+                          / 100</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div
+                      style="display: inline-block; font-size: 0.725rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-forest); margin-bottom: 0.25rem;">
+                      COMPUTED LIVABILITY INDEX
+                    </div>
+                    <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--color-text); margin-bottom: 0.35rem;">
+                      High Livability Rating</h3>
+                    <p style="font-size: 0.8rem; color: var(--color-text-secondary); line-height: 1.45;">
+                      Calculated from 42 human-verified utility readings, road telemetry, and security checks.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- 6 Factor Pills Grid -->
+                <div class="hero-factors-grid">
+                  <div class="hero-factor-pill">
+                    <div style="display: flex; align-items: center; gap: 0.5rem;">
+                      <span style="color: var(--color-forest);">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                          stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path
+                            d="M15.914 4a1.5 1.5 0 0 0-2.474-1.561l-9 9A1.5 1.5 0 0 0 5.5 14h4.002a.5.5 0 0 1 .471.666L8.086 20a1.5 1.5 0 0 0 2.475 1.56l9-9A1.5 1.5 0 0 0 18.5 10h-3.997a.5.5 0 0 1-.472-.667z" />
+                        </svg>
+                      </span>
+                      <span
+                        style="font-size: 0.8rem; font-weight: 500; color: var(--color-text-secondary);">Electricity</span>
+                    </div>
+                    <span style="font-size: 0.85rem; font-weight: 700; color: var(--color-text);">78<span
+                        style="font-size: 0.7rem; font-weight: 500; color: var(--color-text-subtle);">/100</span></span>
+                  </div>
+
+                  <div class="hero-factor-pill">
+                    <div style="display: flex; align-items: center; gap: 0.5rem;">
+                      <span style="color: var(--color-forest);">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                          stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M12 20h.01" />
+                          <path d="M2 8.82a15 15 0 0 1 20 0" />
+                          <path d="M5 12.859a10 10 0 0 1 14 0" />
+                          <path d="M8.5 16.429a5 5 0 0 1 7 0" />
+                        </svg>
+                      </span>
+                      <span
+                        style="font-size: 0.8rem; font-weight: 500; color: var(--color-text-secondary);">Network</span>
+                    </div>
+                    <span style="font-size: 0.85rem; font-weight: 700; color: var(--color-text);">91<span
+                        style="font-size: 0.7rem; font-weight: 500; color: var(--color-text-subtle);">/100</span></span>
+                  </div>
+
+                  <!-- <div class="hero-factor-pill">
+                    <div style="display: flex; align-items: center; gap: 0.5rem;">
+                      <span style="color: var(--color-forest);">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                          stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path
+                            d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
+                          <path d="m9 12 2 2 4-4" />
+                        </svg>
+                      </span>
+                      <span
+                        style="font-size: 0.8rem; font-weight: 500; color: var(--color-text-secondary);">Safety</span>
+                    </div>
+                    <span style="font-size: 0.85rem; font-weight: 700; color: var(--color-text);">83<span
+                        style="font-size: 0.7rem; font-weight: 500; color: var(--color-text-subtle);">/100</span></span>
+                  </div> -->
+
+                  <!-- <div class="hero-factor-pill">
+                    <div style="display: flex; align-items: center; gap: 0.5rem;">
+                      <span style="color: var(--color-forest);">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 6.75 7 5.3c-.29 1.45-1.14 2.84-2.29 3.76S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z"/><path d="M12.56 6.6A10.97 10.97 0 0 0 14 3.02c.5 2.5 2 4.9 4 6.5s3 3.5 3 5.5a6.98 6.98 0 0 1-11.91 4.97"/></svg>
+                      </span>
+                      <span style="font-size: 0.8rem; font-weight: 500; color: var(--color-text-secondary);">Water</span>
+                    </div>
+                    <span style="font-size: 0.85rem; font-weight: 700; color: var(--color-text);">74<span style="font-size: 0.7rem; font-weight: 500; color: var(--color-text-subtle);">/100</span></span>
+                  </div> -->
+
+                  <div class="hero-factor-pill">
+                    <div style="display: flex; align-items: center; gap: 0.5rem;">
+                      <span style="color: var(--color-forest);">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                          stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3" />
+                          <path d="M12 9v4" />
+                          <path d="M12 17h.01" />
+                        </svg>
+                      </span>
+                      <span style="font-size: 0.8rem; font-weight: 500; color: var(--color-text-secondary);">Flood
+                        Risk</span>
+                    </div>
+                    <span style="font-size: 0.85rem; font-weight: 700; color: var(--color-text);">Low</span>
+                  </div>
+
+                  <div class="hero-factor-pill">
+                    <div style="display: flex; align-items: center; gap: 0.5rem;">
+                      <span style="color: var(--color-forest);">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                          stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path
+                            d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2" />
+                          <circle cx="7" cy="17" r="2" />
+                          <path d="M9 17h6" />
+                          <circle cx="17" cy="17" r="2" />
+                        </svg>
+                      </span>
+                      <span
+                        style="font-size: 0.8rem; font-weight: 500; color: var(--color-text-secondary);">Traffic</span>
+                    </div>
+                    <span style="font-size: 0.85rem; font-weight: 700; color: var(--color-text);">68<span
+                        style="font-size: 0.7rem; font-weight: 500; color: var(--color-text-subtle);">/100</span></span>
+                  </div>
+                </div>
+
+                <!-- Footnote -->
+                <div
+                  style="display: flex; align-items: center; justify-content: space-between; padding-top: 0.75rem; border-top: 1px solid var(--color-border); font-size: 0.725rem; color: var(--color-text-subtle);">
+                  <span>Sample Audit: Ikeja Central</span>
+                  <span style="font-style: italic;">Demonstration Data • Ground Verification Sample</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. PROBLEM / HIDDEN REALITY SECTION -->
+      <section id="problem" class="section-padding section-border-top" style="background-color: var(--color-bg-alt);">
+        <div class="container-custom">
+          <div class="section-header text-center">
+            <div class="eyebrow"><span class="eyebrow-pill">THE HIDDEN REALITY</span></div>
+            <h2 class="section-title">A beautiful apartment doesn't tell you how you'll <span
+                class="font-editorial">live there.</span></h2>
+            <p class="section-subtitle">Listing photos and agent promises showcase the walls, but everyday living is
+              defined by the realities outside them.</p>
+          </div>
+
+          <div class="problem-grid">
+            <!-- 1. Electricity -->
+            <div class="card-clean problem-card">
+              <div class="icon-square">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M15.914 4a1.5 1.5 0 0 0-2.474-1.561l-9 9A1.5 1.5 0 0 0 5.5 14h4.002a.5.5 0 0 1 .471.666L8.086 20a1.5 1.5 0 0 0 2.475 1.56l9-9A1.5 1.5 0 0 0 18.5 10h-3.997a.5.5 0 0 1-.472-.667z" />
+                </svg>
+              </div>
+              <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--color-text); letter-spacing: -0.01em;">
+                Electricity Grid Supply</h3>
+              <p style="font-size: 0.875rem; line-height: 1.55; color: var(--color-text-secondary);">A sparkling
+                apartment lighting fixture doesn’t tell you whether public power runs 4 hours or 18 hours daily, or what
+                generator noise you will face at night.</p>
+            </div>
+
+            <!-- 2. Flood -->
+            <div class="card-clean problem-card">
+              <div class="icon-square">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3" />
+                  <path d="M12 9v4" />
+                  <path d="M12 17h.01" />
+                </svg>
+              </div>
+              <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--color-text); letter-spacing: -0.01em;">Rain &
+                Flood Risk</h3>
+              <p style="font-size: 0.875rem; line-height: 1.55; color: var(--color-text-secondary);">Leasing an
+                apartment during the dry season gives zero indication of whether the street becomes an impassable canal
+                after 40 minutes of July rainfall.</p>
+            </div>
+
+            <!-- 3. Commute -->
+            <div class="card-clean problem-card">
+              <div class="icon-square">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2" />
+                  <circle cx="7" cy="17" r="2" />
+                  <path d="M9 17h6" />
+                  <circle cx="17" cy="17" r="2" />
+                </svg>
+              </div>
+              <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--color-text); letter-spacing: -0.01em;">
+                Commute & Bottlenecks</h3>
+              <p style="font-size: 0.875rem; line-height: 1.55; color: var(--color-text-secondary);">What looks like a
+                15-minute drive on an off-peak map can become a grueling 2-hour standstill during weekday morning and
+                evening rush hours.</p>
+            </div>
+
+            <!-- 4. Water -->
+            <!-- <div class="card-clean problem-card">
+              <div class="icon-square">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 6.75 7 5.3c-.29 1.45-1.14 2.84-2.29 3.76S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z" />
+                  <path
+                    d="M12.56 6.6A10.97 10.97 0 0 0 14 3.02c.5 2.5 2 4.9 4 6.5s3 3.5 3 5.5a6.98 6.98 0 0 1-11.91 4.97" />
+                </svg>
+              </div>
+              <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--color-text); letter-spacing: -0.01em;">Water
+                Purity & Pressure</h3>
+              <p style="font-size: 0.875rem; line-height: 1.55; color: var(--color-text-secondary);">Polished faucets
+                hide saline or iron-heavy groundwater that stains tiles, ruins clothes, and demands expensive personal
+                filtration systems.</p>
+            </div> -->
+
+            <!-- 5. Network -->
+            <div class="card-clean problem-card">
+              <div class="icon-square">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 20h.01" />
+                  <path d="M2 8.82a15 15 0 0 1 20 0" />
+                  <path d="M5 12.859a10 10 0 0 1 14 0" />
+                  <path d="M8.5 16.429a5 5 0 0 1 7 0" />
+                </svg>
+              </div>
+              <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--color-text); letter-spacing: -0.01em;">Indoor
+                Cellular Reception</h3>
+              <p style="font-size: 0.875rem; line-height: 1.55; color: var(--color-text-secondary);">Carrier coverage
+                maps show general areas, not the thick concrete dead zones where your phone drops critical work calls
+                inside your living room.</p>
+            </div>
+
+            <!-- 6. Security -->
+            <!-- <div class="card-clean problem-card">
+              <div class="icon-square">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
+                  <path d="M12 8v4" />
+                  <path d="M12 16h.01" />
+                </svg>
+              </div> -->
+            <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--color-text); letter-spacing: -0.01em;">
+              Neighbourhood Security</h3>
+            <p style="font-size: 0.875rem; line-height: 1.55; color: var(--color-text-secondary);">A high compound
+              wall doesn’t reveal whether the access street lacks night illumination, or whether perimeter gates are
+              actually manned after 10 PM.</p>
+          </div>
+        </div>
+  </div>
+  </section>
+
+  <!-- 3. HOW VERIFIRENT WORKS -->
+  <section id="how-it-works" class="section-padding section-border-top">
+    <div class="container-custom">
+      <div class="section-header text-center">
+        <div class="eyebrow"><span class="eyebrow-pill">HOW VERIFIRENT WORKS</span></div>
+        <h2 class="section-title">From address to <span class="font-editorial">confidence.</span></h2>
+        <p class="section-subtitle">A methodical process designed to give prospective tenants complete clarity
+          before signing leases or paying caution fees.</p>
+      </div>
+
+      <div class="how-grid">
+        <!-- Step 01 -->
+        <div class="card-clean how-card">
+          <div class="step-num-watermark">01</div>
+          <div class="icon-square"
+            style="width: 3rem; height: 3rem; border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle); margin-bottom: 1.5rem;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8" />
+              <path d="m21 21-4.3-4.3" />
+            </svg>
+          </div>
+          <div
+            style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-forest); margin-bottom: 0.35rem;">
+            STEP 01 — Search
+          </div>
+          <h3
+            style="font-size: 1.25rem; font-weight: 700; color: var(--color-text); letter-spacing: -0.02em; margin-bottom: 0.75rem;">
+            Search an Address</h3>
+          <p
+            style="font-size: 0.9rem; line-height: 1.6; color: var(--color-text-secondary); margin-bottom: 1.5rem; flex: 1;">
+            Input any street address, estate, or neighbourhood in Lagos. Our system pulls localized ground records
+            rather than generic marketing brochures.
+          </p>
+          <div style="padding-top: 1rem; border-top: 1px solid var(--color-border);">
+            <span style="font-size: 0.75rem; font-weight: 600; color: var(--color-text-muted);">✓ Street & Estate
+              Level Data</span>
+          </div>
+        </div>
+
+        <!-- Step 02 -->
+        <div class="card-clean how-card">
+          <div class="step-num-watermark">02</div>
+          <div class="icon-square"
+            style="width: 3rem; height: 3rem; border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle); margin-bottom: 1.5rem;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10" />
+              <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" />
+            </svg>
+          </div>
+          <div
+            style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-forest); margin-bottom: 0.35rem;">
+            STEP 02 — Understand
+          </div>
+          <h3
+            style="font-size: 1.25rem; font-weight: 700; color: var(--color-text); letter-spacing: -0.02em; margin-bottom: 0.75rem;">
+            Understand the Realities</h3>
+          <p
+            style="font-size: 0.9rem; line-height: 1.6; color: var(--color-text-secondary); margin-bottom: 1.5rem; flex: 1;">
+            Review human-verified metrics across electricity, cellular quality, flooding, safety, and
+            commute flow with transparent freshness stamps.
+          </p>
+          <div style="padding-top: 1rem; border-top: 1px solid var(--color-border);">
+            <span style="font-size: 0.75rem; font-weight: 600; color: var(--color-text-muted);">✓ 6 Verified
+              Factors</span>
+          </div>
+        </div>
+
+        <!-- Step 03 -->
+        <div class="card-clean how-card">
+          <div class="step-num-watermark">03</div>
+          <div class="icon-square"
+            style="width: 3rem; height: 3rem; border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle); margin-bottom: 1.5rem;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10" />
+              <path d="m9 12 2 2 4-4" />
+            </svg>
+          </div>
+          <div
+            style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-forest); margin-bottom: 0.35rem;">
+            STEP 03 — Decide
+          </div>
+          <h3
+            style="font-size: 1.25rem; font-weight: 700; color: var(--color-text); letter-spacing: -0.02em; margin-bottom: 0.75rem;">
+            Decide with Certainty</h3>
+          <p
+            style="font-size: 0.9rem; line-height: 1.6; color: var(--color-text-secondary); margin-bottom: 1.5rem; flex: 1;">
+            Compare trade-offs between areas, read clear AI survival summaries, and avoid locking your hard-earned
+            money into painful living conditions.
+          </p>
+          <div style="padding-top: 1rem; border-top: 1px solid var(--color-border);">
+            <span style="font-size: 0.75rem; font-weight: 600; color: var(--color-text-muted);">✓ Evidence-Backed
+              Tenancy</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. COMPUTED LIVABILITY INDEX -->
+  <section id="livability-score" class="section-padding section-border-top"
+    style="background-color: var(--color-bg-subtle);">
+    <div class="container-custom">
+      <div class="section-header text-center">
+        <div class="eyebrow"><span class="eyebrow-pill">THE COMPUTED INDEX</span></div>
+        <h2 class="section-title">One score. <span class="font-editorial">Four realities.</span></h2>
+        <p class="section-subtitle">A simple 0–100 score calculated entirely from verified ground reports and
+          utility benchmarks — not marketing claims or estimates.</p>
+      </div>
+
+      <div class="score-section-grid">
+        <!-- Left Score Presentation Card -->
+        <div class="card-clean"
+          style="padding: clamp(2rem, 4vw, 3rem); background-color: #FFFFFF; text-align: center; display: flex; flex-direction: column; align-items: center;">
+          <div class="badge-verified" style="margin-bottom: 1.75rem; padding: 0.4rem 0.9rem;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10" />
+              <path d="m9 12 2 2 4-4" />
+            </svg>
+            <span>Built from verified data</span>
+          </div>
+
+          <div class="score-ring-container"
+            style="display: inline-flex; flex-direction: column; align-items: center; justify-content: center; position: relative;">
+            <div style="position: relative; width: 180px; height: 180px;">
+              <svg width="180" height="180" viewBox="0 0 180 180"
+                style="transform: rotate(-90deg); transform-origin: 50% 50%;">
+                <circle class="score-circle-bg" cx="90" cy="90" r="84.5" stroke-width="11"></circle>
+                <circle id="showcaseScoreCircleFill" class="score-circle-fill" cx="90" cy="90" r="84.5"
+                  stroke-width="11"></circle>
+              </svg>
+              <div
+                style="position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
+                <div class="score-number"
+                  style="font-size: 3rem; font-weight: 700; line-height: 1; letter-spacing: -0.04em; color: var(--color-text);">
+                  82</div>
+                <div
+                  style="font-size: 0.75rem; font-weight: 500; color: var(--color-text-subtle); margin-top: 0.25rem;">
+                  / 100</div>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: 1.25rem; margin-bottom: 1.5rem;">
+            <div style="font-size: 1.35rem; font-weight: 700; color: var(--color-text); letter-spacing: -0.02em;">
+              Sample Livability Score</div>
+            <p
+              style="font-size: 0.875rem; color: var(--color-text-secondary); max-width: 320px; margin: 0.35rem auto 0; line-height: 1.5;">
+              Weighted composite calculated across 6 verified human inspections and infrastructure audits.
+            </p>
+          </div>
+
+          <div
+            style="width: 100%; padding: 1rem; background-color: var(--color-bg); border-radius: var(--radius-md); border: 1px solid var(--color-border); display: flex; align-items: center; gap: 0.75rem; text-align: left;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-forest)" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;">
+              <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
+              <path d="M14 2v4a2 2 0 0 0 2 2h4" />
+              <path d="m9 15 2 2 4-4" />
+            </svg>
+            <div style="font-size: 0.8rem; color: var(--color-text-secondary); line-height: 1.4;">
+              <strong>No Algorithmic Hallucinations:</strong> The score is purely mathematical, derived from
+              validated utility data and on-site audit logs.
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Factor List -->
+        <div style="display: flex; flex-direction: column; gap: 0.875rem;">
+
+          <!-- Factor 1: Electricity -->
+          <div class="score-interactive-card active" data-factor="electricity">
+            <div class="icon-square">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M15.914 4a1.5 1.5 0 0 0-2.474-1.561l-9 9A1.5 1.5 0 0 0 5.5 14h4.002a.5.5 0 0 1 .471.666L8.086 20a1.5 1.5 0 0 0 2.475 1.56l9-9A1.5 1.5 0 0 0 18.5 10h-3.997a.5.5 0 0 1-.472-.667z" />
+              </svg>
+            </div>
+            <div style="flex: 1;">
+              <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.25rem;">
+                <h3 style="font-size: 1rem; font-weight: 700; color: var(--color-text);">Electricity Reliability
+                </h3>
+                <span
+                  style="font-size: 0.7rem; font-weight: 600; color: var(--color-forest); background-color: var(--color-forest-tint); padding: 0.2rem 0.5rem; border-radius: var(--radius-full);">Verified
+                  Feeders</span>
+              </div>
+              <p style="font-size: 0.85rem; color: var(--color-text-secondary); line-height: 1.5;">Daily hours of
+                public grid power, feeder reliability, transformer load shedding, and voltage stability.</p>
+            </div>
+          </div>
+
+          <!-- Factor 2: Flood -->
+          <div class="score-interactive-card" data-factor="flood">
+            <div class="icon-square">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3" />
+                <path d="M12 9v4" />
+                <path d="M12 17h.01" />
+              </svg>
+            </div>
+            <div style="flex: 1;">
+              <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.25rem;">
+                <h3 style="font-size: 1rem; font-weight: 700; color: var(--color-text);">Flood Risk</h3>
+                <span
+                  style="font-size: 0.7rem; font-weight: 600; color: var(--color-forest); background-color: var(--color-forest-tint); padding: 0.2rem 0.5rem; border-radius: var(--radius-full);">Topographical
+                  Scans</span>
+              </div>
+              <p style="font-size: 0.85rem; color: var(--color-text-secondary); line-height: 1.5;">Topographical
+                elevation, storm drain clearance, rain run-off speed, and seasonal street water retention.</p>
+            </div>
+          </div>
+
+          <!-- Factor 3: Network -->
+          <div class="score-interactive-card" data-factor="network">
+            <div class="icon-square">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 20h.01" />
+                <path d="M2 8.82a15 15 0 0 1 20 0" />
+                <path d="M5 12.859a10 10 0 0 1 14 0" />
+                <path d="M8.5 16.429a5 5 0 0 1 7 0" />
+              </svg>
+            </div>
+            <div style="flex: 1;">
+              <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.25rem;">
+                <h3 style="font-size: 1rem; font-weight: 700; color: var(--color-text);">Mobile Network Quality</h3>
+                <span
+                  style="font-size: 0.7rem; font-weight: 600; color: var(--color-forest); background-color: var(--color-forest-tint); padding: 0.2rem 0.5rem; border-radius: var(--radius-full);">Carrier
+                  Audits</span>
+              </div>
+              <p style="font-size: 0.85rem; color: var(--color-text-secondary); line-height: 1.5;">Indoor and
+                outdoor 4G/5G signal coverage across MTN, Airtel, and Glo, plus broadband fiber availability.</p>
+            </div>
+          </div>
+
+          <!-- Factor 4: Water -->
+          <!-- <div class="score-interactive-card" data-factor="water">
+            <div class="icon-square">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 6.75 7 5.3c-.29 1.45-1.14 2.84-2.29 3.76S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z" />
+                <path
+                  d="M12.56 6.6A10.97 10.97 0 0 0 14 3.02c.5 2.5 2 4.9 4 6.5s3 3.5 3 5.5a6.98 6.98 0 0 1-11.91 4.97" />
+              </svg>
+            </div> -->
+          <!-- <div style="flex: 1;">
+              <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.25rem;">
+                <h3 style="font-size: 1rem; font-weight: 700; color: var(--color-text);">Water Reliability</h3>
+                <span
+                  style="font-size: 0.7rem; font-weight: 600; color: var(--color-forest); background-color: var(--color-forest-tint); padding: 0.2rem 0.5rem; border-radius: var(--radius-full);">Water
+                  Testing</span>
+              </div>
+              <p style="font-size: 0.85rem; color: var(--color-text-secondary); line-height: 1.5;">Borehole water
+                quality, salinity index, seasonal water table depth, and municipal distribution status.</p>
+            </div>
+          </div> -->
+
+          <!-- Factor 5: Safety -->
+          <!-- <div class="score-interactive-card" data-factor="safety">
+            <div class="icon-square">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
+                <path d="m9 12 2 2 4-4" />
+              </svg>
+            </div> -->
+          <!-- <div style="flex: 1;">
+              <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.25rem;">
+                <h3 style="font-size: 1rem; font-weight: 700; color: var(--color-text);">Safety & Security</h3>
+                <span
+                  style="font-size: 0.7rem; font-weight: 600; color: var(--color-forest); background-color: var(--color-forest-tint); padding: 0.2rem 0.5rem; border-radius: var(--radius-full);">Ground
+                  Audits</span>
+              </div>
+              <p style="font-size: 0.85rem; color: var(--color-text-secondary); line-height: 1.5;">Gated estate
+                infrastructure, street lighting coverage, private security presence, and historical incident rates.
+              </p>
+            </div> -->
+          <!-- </div> -->
+
+          <!-- Factor 6: Traffic -->
+          <div class="score-interactive-card" data-factor="traffic">
+            <div class="icon-square">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2" />
+                <circle cx="7" cy="17" r="2" />
+                <path d="M9 17h6" />
+                <circle cx="17" cy="17" r="2" />
+              </svg>
+            </div>
+            <div style="flex: 1;">
+              <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.25rem;">
+                <h3 style="font-size: 1rem; font-weight: 700; color: var(--color-text);">Commute & Traffic Flow</h3>
+                <span
+                  style="font-size: 0.7rem; font-weight: 600; color: var(--color-forest); background-color: var(--color-forest-tint); padding: 0.2rem 0.5rem; border-radius: var(--radius-full);">Flow
+                  Telemetry</span>
+              </div>
+              <p style="font-size: 0.85rem; color: var(--color-text-secondary); line-height: 1.5;">Peak morning and
+                evening bottlenecks, arterial road connectivity, and transit accessibility to key commercial nodes.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. NEIGHBOURHOOD INTELLIGENCE EXPLORER -->
+  <section id="intelligence" class="section-padding section-border-top">
+    <div class="container-custom">
+      <div class="section-header text-center">
+        <div class="eyebrow"><span class="eyebrow-pill">NEIGHBOURHOOD INTELLIGENCE</span></div>
+        <h2 class="section-title">Don't just see the score. <span class="font-editorial">Understand it.</span></h2>
+        <p class="section-subtitle">Surface the specific strengths, vulnerabilities, and everyday trade-offs of any
+          area before signing a lease.</p>
+      </div>
+
+      <!-- Location Selector Tabs -->
+      <div class="intel-tabs">
+        <button type="button" class="intel-tab-btn active" data-neighbourhood="ikeja">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+            <circle cx="12" cy="10" r="3" />
+          </svg>
+          <span>Ikeja</span>
+          <span style="font-size: 0.75rem; opacity: 0.85; padding-left: 0.25rem;">(82/100)</span>
+        </button>
+        <button type="button" class="intel-tab-btn" data-neighbourhood="yaba">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--color-forest)" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+            <circle cx="12" cy="10" r="3" />
+          </svg>
+          <span>Yaba</span>
+          <span style="font-size: 0.75rem; opacity: 0.85; padding-left: 0.25rem;">(77/100)</span>
+        </button>
+        <button type="button" class="intel-tab-btn" data-neighbourhood="lekki1">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--color-forest)" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+            <circle cx="12" cy="10" r="3" />
+          </svg>
+          <span>Lekki Phase 1</span>
+          <span style="font-size: 0.75rem; opacity: 0.85; padding-left: 0.25rem;">(80/100)</span>
+        </button>
+      </div>
+
+      <!-- Dynamic Intelligence Card -->
+      <div class="card-clean"
+        style="background-color: #FFFFFF; border: 1px solid var(--color-border); border-radius: var(--radius-lg); overflow: hidden;">
+
+        <!-- Card Header -->
+        <div
+          style="padding: 1.5rem 2rem; background-color: var(--color-bg); border-bottom: 1px solid var(--color-border); display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem;">
+          <div>
+            <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.25rem;">
+              <span id="intelName" style="font-size: 1.35rem; font-weight: 700; color: var(--color-text);">Ikeja,
+                Lagos</span>
+              <span class="badge-verified">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
+                  <path d="m9 12 2 2 4-4" />
+                </svg>
+                <span>Ground Audited</span>
+              </span>
+            </div>
+            <div id="intelSubArea" style="font-size: 0.85rem; color: var(--color-text-secondary);">GRA & Allen
+              Corridor • High Livability</div>
+          </div>
+
+          <div style="display: flex; align-items: center; gap: 1.25rem;">
+            <div style="text-align: right;">
+              <div
+                style="display: flex; align-items: center; gap: 0.35rem; font-size: 0.75rem; color: var(--color-text-muted);">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12 6 12 12 16 14" />
+                </svg>
+                <span id="intelFreshness">Updated 4 days ago</span>
+              </div>
+              <div id="intelConfidence" style="font-size: 0.75rem; font-weight: 600; color: var(--color-forest);">
+                Confidence: High</div>
+            </div>
+
+            <div
+              style="padding: 0.65rem 1.15rem; background-color: #FFFFFF; border: 1px solid var(--color-border); border-radius: var(--radius-md); text-align: center;">
+              <div
+                style="font-size: 0.65rem; font-weight: 700; text-transform: uppercase; color: var(--color-text-subtle);">
+                SCORE</div>
+              <div id="intelScoreBadge"
+                style="font-size: 1.4rem; font-weight: 800; color: var(--color-forest); line-height: 1;">82</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card Body Grid -->
+        <div class="intel-grid" style="padding: 2rem;">
+
+          <!-- Column 1: Factor Breakdown -->
+          <div>
+            <h3
+              style="font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--color-text-subtle); margin-bottom: 1.25rem;">
+              Verified Factor Breakdown
+            </h3>
+            <div id="intelFactorsList" style="display: flex; flex-direction: column; gap: 1rem;">
+              <!-- Dynamic Factor Elements Injected via JS -->
+            </div>
+          </div>
+
+          <!-- Column 2: Strengths & Watchouts -->
+          <div>
+            <h3
+              style="font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--color-text-subtle); margin-bottom: 1.25rem;">
+              Ground Reality Analysis
+            </h3>
+
+            <!-- Strengths Box -->
+            <div
+              style="padding: 1.25rem; background-color: #FFFFFF; border: 1px solid var(--color-border); border-radius: var(--radius-md); margin-bottom: 1.25rem;">
+              <div
+                style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem; font-weight: 700; color: var(--color-verified); margin-bottom: 0.75rem;">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="m9 12 2 2 4-4" />
+                </svg>
+                <span>Verified Strengths</span>
+              </div>
+              <ul id="intelStrengthsList" style="list-style: none; display: flex; flex-direction: column; gap: 0.5rem;">
+                <!-- Injected via JS -->
+              </ul>
+            </div>
+
+            <!-- Watchouts Box -->
+            <div
+              style="padding: 1.25rem; background-color: #FFFFFF; border: 1px solid var(--color-border); border-radius: var(--radius-md); margin-bottom: 1.5rem;">
+              <div
+                style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem; font-weight: 700; color: var(--color-warning); margin-bottom: 0.75rem;">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10" />
+                  <line x1="12" x2="12" y1="8" y2="12" />
+                  <line x1="12" x2="12.01" y1="16" y2="16" />
+                </svg>
+                <span>Important Watchouts</span>
+              </div>
+              <ul id="intelWatchoutsList" style="list-style: none; display: flex; flex-direction: column; gap: 0.5rem;">
+                <!-- Injected via JS -->
+              </ul>
+            </div>
+
+            <!-- Demonstration Note -->
+            <div
+              style="padding: 1rem; background-color: var(--color-bg); border-radius: var(--radius-sm); border: 1px dashed var(--color-border); font-size: 0.75rem; color: var(--color-text-subtle); line-height: 1.4;">
+              <strong>Demonstration Data:</strong> The values shown above represent the initial benchmark sample for
+              <span id="intelDemoName">Ikeja</span>. Upon launch, scores update dynamically via real-time community
+              sensors and validated inspector audits.
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. AI SURVIVAL SUMMARY & TRUST PRINCIPLE -->
+  <section id="survival-summary" class="section-padding section-border-top"
+    style="background-color: var(--color-bg-alt);">
+    <div class="container-custom">
+      <div class="section-header text-center">
+        <div class="eyebrow"><span class="eyebrow-pill">SYNTHESIS & EXPLANATION</span></div>
+        <h2 class="section-title">Data is useful. <span class="font-editorial">Understanding it is better.</span>
+        </h2>
+        <p class="section-subtitle">Numbers tell part of the story. Our AI translates complex utility telemetry and
+          inspection logs into a concise, practical survival summary.</p>
+      </div>
+
+      <!-- Survival Summary Card -->
+      <div class="container-narrow" style="margin-bottom: 4rem;">
+        <div class="card-clean"
+          style="padding: clamp(2rem, 4vw, 3rem); background-color: #FFFFFF; border: 1px solid var(--color-border); position: relative;">
+          <div
+            style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 1.5rem; padding-bottom: 1rem; border-bottom: 1px solid var(--color-border);">
+            <div class="badge-ai">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z" />
+                <path d="M20 2v4" />
+                <path d="M22 4h-4" />
+                <circle cx="4" cy="20" r="2" />
+              </svg>
+              <span>AI-generated from verified data</span>
+            </div>
+            <div style="font-size: 0.75rem; color: var(--color-text-subtle);">Target: Ikeja GRA & Allen Corridor
+            </div>
+          </div>
+
+          <blockquote
+            style="font-size: clamp(1.1rem, 1.8vw, 1.35rem); line-height: 1.6; color: var(--color-text); font-style: normal; font-weight: 500; letter-spacing: -0.01em; margin-bottom: 1.5rem;">
+            “Ikeja offers strong mobile connectivity and relatively good safety indicators. However, weekday
+            commuting can be challenging during peak hours. Electricity reliability is moderate, so you may want to
+            ask about backup power before moving in.”
+          </blockquote>
+
+          <div
+            style="display: flex; align-items: center; gap: 0.625rem; padding: 0.85rem 1rem; background-color: var(--color-bg); border-radius: var(--radius-sm); border: 1px solid var(--color-border);">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-verified)"
+              stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
+              <path d="m9 12 2 2 4-4" />
+            </svg>
+            <span style="font-size: 0.8rem; color: var(--color-text-secondary); font-weight: 500;">
+              <strong>AI explains. Humans verify.</strong> The facts above are derived strictly from 42 audited
+              utility logs and verified resident reports.
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Trust Principle Dark Banner -->
+      <div class="card-clean trust-banner-dark">
+        <div
+          style="display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-sage); margin-bottom: 1rem;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
+            <path d="m9 12 2 2 4-4" />
+          </svg>
+          <span>THE CORE TRUST PRINCIPLE</span>
+        </div>
+        <h3
+          style="font-size: clamp(1.85rem, 3.8vw, 2.75rem); font-weight: 700; line-height: 1.15; letter-spacing: -0.03em; margin-bottom: 1rem;">
+          AI Generated. <span style="color: var(--color-sage);">Human Verified.</span>
+        </h3>
+        <p
+          style="font-size: clamp(1rem, 1.3vw, 1.15rem); line-height: 1.6; color: rgba(255, 255, 255, 0.85); max-width: 640px; margin: 0 auto 2.5rem;">
+          AI helps explain the information in simple language. Humans make sure the information can be trusted. We
+          never allow artificial intelligence to invent, estimate, or hallucinate physical living conditions.
+        </p>
+
+        <div class="trust-five-grid">
+          <div class="trust-item-dark">
+            <div
+              style="font-size: 0.7rem; font-weight: 800; letter-spacing: 0.08em; color: var(--color-sage); margin-bottom: 0.35rem;">
+              REAL DATA</div>
+            <div style="font-size: 0.775rem; color: rgba(255, 255, 255, 0.75); line-height: 1.4;">Meter logs, field
+              sensors, and utility records</div>
+          </div>
+          <div class="trust-item-dark">
+            <div
+              style="font-size: 0.7rem; font-weight: 800; letter-spacing: 0.08em; color: var(--color-sage); margin-bottom: 0.35rem;">
+              HUMAN VERIFIED</div>
+            <div style="font-size: 0.775rem; color: rgba(255, 255, 255, 0.75); line-height: 1.4;">On-site inspectors
+              audit ground truth</div>
+          </div>
+          <div class="trust-item-dark">
+            <div
+              style="font-size: 0.7rem; font-weight: 800; letter-spacing: 0.08em; color: var(--color-sage); margin-bottom: 0.35rem;">
+              COMPUTED SCORE</div>
+            <div style="font-size: 0.775rem; color: rgba(255, 255, 255, 0.75); line-height: 1.4;">Pure mathematical
+              algorithm (0–100)</div>
+          </div>
+          <div class="trust-item-dark">
+            <div
+              style="font-size: 0.7rem; font-weight: 800; letter-spacing: 0.08em; color: var(--color-sage); margin-bottom: 0.35rem;">
+              AI EXPLANATION</div>
+            <div style="font-size: 0.775rem; color: rgba(255, 255, 255, 0.75); line-height: 1.4;">Plain-English
+              synthesis of the verified facts</div>
+          </div>
+          <div class="trust-item-dark">
+            <div
+              style="font-size: 0.7rem; font-weight: 800; letter-spacing: 0.08em; color: var(--color-sage); margin-bottom: 0.35rem;">
+              USER DECISION</div>
+            <div style="font-size: 0.775rem; color: rgba(255, 255, 255, 0.75); line-height: 1.4;">You choose with
+              unshakeable confidence</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. OPTIONAL EXTENSIONS & VERIFICATION SERVICES -->
+  <section id="verification-services" class="section-padding section-border-top">
+    <div class="container-custom">
+      <div class="section-header text-center">
+        <div class="eyebrow"><span class="eyebrow-pill">OPTIONAL EXTENSIONS</span></div>
+        <h2 class="section-title">Need more <span class="font-editorial">certainty?</span></h2>
+        <p class="section-subtitle">While neighbourhood intelligence forms our core platform, our optional
+          verification and inspection services provide property-level validation.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 01 -->
+        <div class="card-clean"
+          style="padding: 2.25rem; background-color: #FFFFFF; display: flex; flex-direction: column;">
+          <div class="icon-square"
+            style="width: 3rem; height: 3rem; border-radius: var(--radius-md); margin-bottom: 1.25rem;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="m16 11 2 2 4-4" />
+              <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+            </svg>
+          </div>
+          <div
+            style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-forest); margin-bottom: 0.35rem;">
+            OPTIONAL SERVICE 01</div>
+          <h3
+            style="font-size: 1.35rem; font-weight: 700; color: var(--color-text); margin-bottom: 0.75rem; letter-spacing: -0.02em;">
+            Property & Agent Verification</h3>
+          <p style="font-size: 0.875rem; line-height: 1.6; color: var(--color-text-secondary); margin-bottom: 1.5rem;">
+            Validates that the listing exists, the agent or landlord is authenticated, and the advertised rent and
+            terms match reality.
+          </p>
+
+          <div
+            style="background-color: var(--color-bg); padding: 1rem 1.25rem; border-radius: var(--radius-sm); margin-bottom: 1.5rem;">
+            <div
+              style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--color-text-subtle); margin-bottom: 0.5rem;">
+              Key Verification Checks</div>
+            <div
+              style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.35rem; font-size: 0.8rem; color: var(--color-text);">
+              <span>✓ Physical Address</span>
+              <span>✓ Landlord Identity</span>
+              <span>✓ True Rent & Fees</span>
+              <span>✓ Active Availability</span>
+            </div>
+          </div>
+
+          <div style="margin-top: auto;">
+            <div style="font-size: 0.725rem; color: var(--color-text-muted); margin-bottom: 0.5rem;">Accountable
+              Lifecycle Statuses:</div>
+            <div style="display: flex; flex-wrap: wrap; gap: 0.4rem;">
+              <span
+                style="font-size: 0.7rem; font-weight: 600; color: #0E744A; background-color: #E8F5EE; padding: 0.2rem 0.55rem; border-radius: var(--radius-full); border: 1px solid rgba(14, 116, 74, 0.2);">Verified</span>
+              <span
+                style="font-size: 0.7rem; font-weight: 600; color: #B45309; background-color: #FEF3C7; padding: 0.2rem 0.55rem; border-radius: var(--radius-full); border: 1px solid rgba(180, 83, 9, 0.2);">Under
+                Review</span>
+              <span
+                style="font-size: 0.7rem; font-weight: 600; color: #4B5563; background-color: #F3F4F6; padding: 0.2rem 0.55rem; border-radius: var(--radius-full); border: 1px solid rgba(75, 85, 99, 0.2);">Verification
+                Due</span>
+              <span
+                style="font-size: 0.7rem; font-weight: 600; color: #9CA3AF; background-color: #F9FAFB; padding: 0.2rem 0.55rem; border-radius: var(--radius-full); border: 1px solid rgba(156, 163, 175, 0.2);">Expired</span>
+              <span
+                style="font-size: 0.7rem; font-weight: 600; color: #DC2626; background-color: #FEE2E2; padding: 0.2rem 0.55rem; border-radius: var(--radius-full); border: 1px solid rgba(220, 38, 38, 0.2);">Suspended</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 02 -->
+        <div class="card-clean"
+          style="padding: 2.25rem; background-color: #FFFFFF; display: flex; flex-direction: column;">
+          <div class="icon-square"
+            style="width: 3rem; height: 3rem; border-radius: var(--radius-md); margin-bottom: 1.25rem;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0" />
+              <circle cx="12" cy="12" r="3" />
+            </svg>
+          </div>
+          <div
+            style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-forest); margin-bottom: 0.35rem;">
+            OPTIONAL SERVICE 02</div>
+          <h3
+            style="font-size: 1.35rem; font-weight: 700; color: var(--color-text); margin-bottom: 0.75rem; letter-spacing: -0.02em;">
+            Physical Inspection & Audit</h3>
+          <p style="font-size: 0.875rem; line-height: 1.6; color: var(--color-text-secondary); margin-bottom: 1.5rem;">
+            A vetted local inspector physically checks the apartment against our 40-point checklist before you
+            commit to rent or travel down for inspections.
+          </p>
+
+          <div
+            style="background-color: var(--color-bg); padding: 1.15rem 1.25rem; border-radius: var(--radius-sm); margin-bottom: 1.5rem; border: 1px solid var(--color-border);">
+            <div
+              style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--color-forest); margin-bottom: 0.5rem;">
+              Clear Report Separation</div>
+            <div style="display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.8rem;">
+              <div style="display: flex; align-items: center; gap: 0.5rem; color: var(--color-verified);">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="m9 12 2 2 4-4" />
+                </svg>
+                <strong>Physically Observed:</strong>
+                <span style="color: var(--color-text-secondary);">Water pressure, meter wiring, tile dampness</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: 0.5rem; color: var(--color-warning);">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12 6 12 12 16 14" />
+                </svg>
+                <strong>Claimed by Agent:</strong>
+                <span style="color: var(--color-text-secondary);">"24/7 light promised", verbal covenants</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            style="margin-top: auto; display: flex; align-items: center; gap: 0.5rem; font-size: 0.75rem; color: var(--color-text-muted);">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
+              <path d="M14 2v4a2 2 0 0 0 2 2h4" />
+              <path d="M10 9H8" />
+              <path d="M16 13H8" />
+              <path d="M16 17H8" />
+            </svg>
+            <span>Full downloadable PDF inspection dossiers upon request.</span>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center;">
+        <a href="#waitlist" class="btn-secondary">Explore Verification Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. NEIGHBOURHOOD BENCHMARKS COMPARISON -->
+  <!-- <section id="compare" class="section-padding section-border-top" style="background-color: var(--color-bg-subtle);">
+    <div class="container-custom">
+      <div class="section-header text-center">
+        <div class="eyebrow"><span class="eyebrow-pill">NEIGHBOURHOOD BENCHMARKS</span></div>
+        <h2 class="section-title">Don't compare apartments. <span class="font-editorial">Compare realities.</span>
+        </h2>
+        <p class="section-subtitle">Square footage and bedroom counts mean little if one location floods or lacks
+          mobile reception for your daily work.</p>
+      </div> -->
+
+  <!-- Selectors -->
+  <!-- <div class="comp-select-bar">
+        <div style="flex: 1; min-width: 220px;">
+          <label for="compSelectA"
+            style="display: block; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--color-text-subtle); margin-bottom: 0.35rem;">Location
+            A</label>
+          <select id="compSelectA" class="form-input" style="height: 2.75rem; font-weight: 600;">
+            <option value="ikeja">Ikeja (Mainland Hub)</option>
+            <option value="yaba">Yaba (Tech Corridor)</option>
+            <option value="lekki1">Lekki Phase 1 (Island)</option>
+          </select>
+        </div> -->
+
+  <!-- <div style="padding-top: 1.25rem; color: var(--color-text-muted);">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="m16 3 4 4-4 4" />
+            <path d="M20 7H4" />
+            <path d="m8 21-4-4 4-4" />
+            <path d="M4 17h16" />
+          </svg>
+        </div> -->
+
+  <!-- <div style="flex: 1; min-width: 220px;">
+          <label for="compSelectB"
+            style="display: block; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--color-text-subtle); margin-bottom: 0.35rem;">Location
+            B</label>
+          <select id="compSelectB" class="form-input" style="height: 2.75rem; font-weight: 600;">
+            <option value="ikeja">Ikeja (Mainland Hub)</option>
+            <option value="yaba" selected>Yaba (Tech Corridor)</option>
+            <option value="lekki1">Lekki Phase 1 (Island)</option>
+          </select>
+        </div>
+      </div> -->
+
+  <!-- Comparison Table -->
+  <!-- <div class="card-clean"
+        style="background-color: #FFFFFF; border: 1px solid var(--color-border); border-radius: var(--radius-lg); overflow: hidden;">
+        <div class="comp-header-grid">
+          <div style="font-size: 0.8rem; font-weight: 700; text-transform: uppercase; color: var(--color-text-subtle);">
+            Verified Dimension</div>
+          <div id="compHeaderA" style="text-align: center;">
+            <div style="font-size: 1.05rem; font-weight: 700; color: var(--color-forest);">Ikeja</div>
+            <div style="font-size: 0.75rem; color: var(--color-text-muted);">Index: <strong>82/100</strong></div>
+          </div>
+          <div id="compHeaderB" style="text-align: center;">
+            <div style="font-size: 1.05rem; font-weight: 700; color: var(--color-forest);">Yaba</div>
+            <div style="font-size: 0.75rem; color: var(--color-text-muted);">Index: <strong>77/100</strong></div>
+          </div>
+        </div> -->
+
+  <!-- <div id="compRowsContainer" style="display: flex; flex-direction: column;">
+         Dynamic Rows Injected via JS
+        </div> -->
+
+  <!-- <div
+          style="padding: 1rem 2rem; background-color: var(--color-bg); border-top: 1px solid var(--color-border); font-size: 0.75rem; color: var(--color-text-subtle); textAlign: center;">
+          <em>All metrics are sample demonstration values based on initial Lagos audits. Real continuous telemetry
+            activates at public release.</em>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- 9. TRUST, GROUND VERIFICATION & INTEGRITY -->
+  <section id="trust" class="section-padding section-border-top">
+    <div class="container-custom">
+      <div class="section-header text-center">
+        <div class="eyebrow"><span class="eyebrow-pill">ACCOUNTABILITY & INTEGRITY</span></div>
+        <h2 class="section-title">Information should be <span class="font-editorial">accountable.</span></h2>
+        <p class="section-subtitle">If something doesn't look right, you should be able to report it. Transparency
+          and peer auditing are the bedrock of our platform.</p>
+      </div>
+
+      <!-- Dispute Resolution Workflow -->
+      <div style="max-width: 960px; margin: 0 auto 4rem;">
+        <div
+          style="font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-text-subtle); text-align: center; margin-bottom: 1.5rem;">
+          DISPUTE & RESOLUTION WORKFLOW: REPORT → REVIEW → VERIFY → CORRECT
+        </div>
+
+        <div class="dispute-grid">
+          <!-- Step 1 -->
+          <div class="card-clean"
+            style="padding: 1.5rem 1.25rem; background-color: #FFFFFF; border: 1px solid var(--color-border); position: relative; display: flex; flex-direction: column;">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
+              <div class="icon-square" style="color: var(--color-warning);">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z" />
+                  <line x1="4" x2="4" y1="22" y2="15" />
+                </svg>
+              </div>
+              <span
+                style="font-size: 0.75rem; font-weight: 800; color: var(--color-forest); letter-spacing: 0.04em;">01</span>
+            </div>
+            <div
+              style="font-size: 0.7rem; font-weight: 800; letter-spacing: 0.08em; color: var(--color-forest); margin-bottom: 0.25rem;">
+              REPORT</div>
+            <h4 style="font-size: 1rem; font-weight: 700; color: var(--color-text); margin-bottom: 0.5rem;">Tenant
+              Ingestion</h4>
+            <p style="font-size: 0.8rem; color: var(--color-text-secondary); line-height: 1.5;">Tenants or residents
+              report an anomaly, grid shift, or unexpected flooding.</p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="card-clean"
+            style="padding: 1.5rem 1.25rem; background-color: #FFFFFF; border: 1px solid var(--color-border); position: relative; display: flex; flex-direction: column;">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
+              <div class="icon-square">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="11" cy="11" r="8" />
+                  <path d="m21 21-4.3-4.3" />
+                </svg>
+              </div>
+              <span
+                style="font-size: 0.75rem; font-weight: 800; color: var(--color-forest); letter-spacing: 0.04em;">02</span>
+            </div>
+            <div
+              style="font-size: 0.7rem; font-weight: 800; letter-spacing: 0.08em; color: var(--color-forest); margin-bottom: 0.25rem;">
+              REVIEW</div>
+            <h4 style="font-size: 1rem; font-weight: 700; color: var(--color-text); margin-bottom: 0.5rem;">Evidence
+              Audit</h4>
+            <p style="font-size: 0.8rem; color: var(--color-text-secondary); line-height: 1.5;">Data team analyzes
+              cross-referenced meter photos, utility receipts, and cell towers.</p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="card-clean"
+            style="padding: 1.5rem 1.25rem; background-color: #FFFFFF; border: 1px solid var(--color-border); position: relative; display: flex; flex-direction: column;">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
+              <div class="icon-square" style="color: var(--color-verified);">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="m9 12 2 2 4-4" />
+                </svg>
+              </div>
+              <span
+                style="font-size: 0.75rem; font-weight: 800; color: var(--color-forest); letter-spacing: 0.04em;">03</span>
+            </div>
+            <div
+              style="font-size: 0.7rem; font-weight: 800; letter-spacing: 0.08em; color: var(--color-forest); margin-bottom: 0.25rem;">
+              VERIFY</div>
+            <h4 style="font-size: 1rem; font-weight: 700; color: var(--color-text); margin-bottom: 0.5rem;">Field
+              Verification</h4>
+            <p style="font-size: 0.8rem; color: var(--color-text-secondary); line-height: 1.5;">Local vetted
+              inspectors physically check the ground condition against verification guidelines.</p>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="card-clean"
+            style="padding: 1.5rem 1.25rem; background-color: #FFFFFF; border: 1px solid var(--color-border); position: relative; display: flex; flex-direction: column;">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
+              <div class="icon-square">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8" />
+                  <path d="M21 3v5h-5" />
+                  <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16" />
+                  <path d="M8 16H3v5" />
+                </svg>
+              </div>
+              <span
+                style="font-size: 0.75rem; font-weight: 800; color: var(--color-forest); letter-spacing: 0.04em;">04</span>
+            </div>
+            <div
+              style="font-size: 0.7rem; font-weight: 800; letter-spacing: 0.08em; color: var(--color-forest); margin-bottom: 0.25rem;">
+              CORRECT</div>
+            <h4 style="font-size: 1rem; font-weight: 700; color: var(--color-text); margin-bottom: 0.5rem;">Score
+              Adjustment</h4>
+            <p style="font-size: 0.8rem; color: var(--color-text-secondary); line-height: 1.5;">The Livability Score
+              updates publicly and logs the revision date to maintain integrity.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 Trust Guarantees -->
+      <div class="guarantee-grid">
+        <div
+          style="padding: 1.5rem; background-color: var(--color-bg); border-radius: var(--radius-md); border: 1px solid var(--color-border); display: flex; align-items: flex-start; gap: 1rem;">
+          <div class="icon-square" style="background-color: #FFFFFF; border: 1px solid var(--color-border);">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
+              <path d="m9 12 2 2 4-4" />
+            </svg>
+          </div>
+          <div>
+            <h4 style="font-size: 0.975rem; font-weight: 700; color: var(--color-text); margin-bottom: 0.35rem;">
+              100% Ground Verified</h4>
+            <p style="font-size: 0.825rem; color: var(--color-text-secondary); line-height: 1.5;">Every foundational
+              datapoint stems from human ground audits, physical tests, or verified utility receipts.</p>
+          </div>
+        </div>
+
+        <div
+          style="padding: 1.5rem; background-color: var(--color-bg); border-radius: var(--radius-md); border: 1px solid var(--color-border); display: flex; align-items: flex-start; gap: 1rem;">
+          <div class="icon-square" style="background-color: #FFFFFF; border: 1px solid var(--color-border);">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10" />
+              <polyline points="12 6 12 12 16 14" />
+            </svg>
+          </div>
+          <div>
+            <h4 style="font-size: 0.975rem; font-weight: 700; color: var(--color-text); margin-bottom: 0.35rem;">
+              Transparent Freshness</h4>
+            <p style="font-size: 0.825rem; color: var(--color-text-secondary); line-height: 1.5;">All cards
+              explicitly declare when data was last updated. Stale records are automatically flagged for re-audit.
+            </p>
+          </div>
+        </div>
+
+        <div
+          style="padding: 1.5rem; background-color: var(--color-bg); border-radius: var(--radius-md); border: 1px solid var(--color-border); display: flex; align-items: flex-start; gap: 1rem;">
+          <div class="icon-square" style="background-color: #FFFFFF; border: 1px solid var(--color-border);">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect width="18" height="11" x="3" y="11" rx="2" ry="2" />
+              <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+            </svg>
+          </div>
+          <div>
+            <h4 style="font-size: 0.975rem; font-weight: 700; color: var(--color-text); margin-bottom: 0.35rem;">No
+              Landlord Bias</h4>
+            <p style="font-size: 0.825rem; color: var(--color-text-secondary); line-height: 1.5;">Landlords cannot
+              pay to inflate scores. If property claims conflict with inspector reality, the truth prevails.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. WAITLIST EARLY ACCESS SECTION -->
+  <section id="waitlist" class="section-padding section-border-top waitlist-section">
+    <div class="container-narrow" style="position: relative; z-index: 1; text-align: center;">
+
+      <div
+        style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.35rem 0.85rem; border-radius: var(--radius-full); background-color: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.15); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-sage); margin-bottom: 1.25rem;">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path
+            d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+          <circle cx="12" cy="10" r="3" />
+        </svg>
+        <span>EARLY ACCESS • LAGOS, NIGERIA</span>
+      </div>
+
+      <h2
+        style="font-size: clamp(2.15rem, 4.5vw, 3.25rem); font-weight: 700; line-height: 1.15; letter-spacing: -0.03em; color: #FFFFFF; margin-bottom: 1rem;">
+        Your next home deserves <br>
+        <span class="font-editorial" style="font-weight: 400; color: var(--color-sage);">better information.</span>
+      </h2>
+
+      <p
+        style="font-size: clamp(1rem, 1.35vw, 1.15rem); line-height: 1.6; color: rgba(255, 255, 255, 0.85); max-width: 560px; margin: 0 auto 2.5rem;">
+        Be one of the first renters to experience VerifiRent. Find the right home faster, skip the bad surprises,
+        and sign leases with real confidence — backed by verified ground-level intelligence.
+      </p>
+
+      <!-- Waitlist Box -->
+      <div class="waitlist-card">
+        <div style="margin-bottom: 1.25rem; text-align: center;">
+          <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--color-text); margin-bottom: 0.25rem;">Join
+            the Priority Waitlist</h3>
+          <p style="font-size: 0.8rem; color: var(--color-text-secondary);">Reserved invitations sent sequentially
+            by registration timestamp.</p>
+        </div>
+
+        <div class="waitlist-form-wrapper">
+          <form id="footerWaitlistForm" novalidate data-source="final-cta">
+            <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+              <!-- <div style="width: 100%;">
+                <label for="footer-email" style="display: none;">Email address</label>
+                <input id="footer-email" type="email" placeholder="Enter your email address" class="form-input" required
+                  style="height: 3rem;">
+              </div> -->
+
+              <!-- <div style="width: 100%;">
+                <label for="footer-name" style="display: none;">Name (optional)</label>
+                <input id="footer-name" type="text" placeholder="Name (optional)" class="form-input"
+                  style="height: 3rem;">
+              </div> -->
+
+              <a href="https://form.typeform.com/to/t3echFdS" target="_blank" rel="noopener noreferrer"
+                class="btn-primary"
+                style="height: 3rem; white-space: nowrap; padding-left: 1.5rem; padding-right: 1.5rem; width: 100%;">
+                <span>Join the Waitlist</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+
+            <div class="waitlist-error"
+              style="display: none; margin-top: 0.75rem; align-items: center; gap: 0.5rem; font-size: 0.85rem; color: #DC2626; padding: 0.5rem 0.75rem; background-color: #FEF2F2; border-radius: var(--radius-sm); border: 1px solid #FEE2E2;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" x2="12" y1="8" y2="12"></line>
+                <line x1="12" x2="12.01" y1="16" y2="16"></line>
+              </svg>
+              <span class="error-text">Please enter a valid email address.</span>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Bottom Perks -->
+      <div
+        style="display: flex; justify-content: center; align-items: center; gap: 1.5rem; flex-wrap: wrap; font-size: 0.8rem; color: rgba(255, 255, 255, 0.7);">
+        <span>✓ Find the right home faster</span>
+        <span>✓ Decide with verified facts</span>
+        <span>✓ 20+ Lagos neighbourhoods at launch</span>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- ==========================================================================
+         FOOTER
+         ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container-custom">
+      <div class="footer-top">
+
+        <div style="max-width: 340px;">
+          <div style="margin-bottom: 1rem;">
+            <a href="#hero" style="display: inline-flex; align-items: center; gap: 0.65rem;"
+              aria-label="VerifiRent Home">
+              <svg width="34" height="34" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"
+                style="flex-shrink: 0; display: block;">
+                <path d="M 23 44 C 20 54 22 66 28 74 C 36 84 50 89 62 87 C 72 84 81 76 84 66 C 87 56 86 46 81 37"
+                  stroke="#0D382B" stroke-width="6" stroke-linecap="round" />
+                <rect x="66" y="22" width="9" height="18" fill="#0D382B" rx="1.5" />
+                <path d="M 18 44 L 50 18 L 82 44" stroke="#0D382B" stroke-width="6.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <rect x="44" y="38" width="4.5" height="4.5" fill="#0D382B" rx="0.5" />
+                <rect x="51.5" y="38" width="4.5" height="4.5" fill="#0D382B" rx="0.5" />
+                <rect x="44" y="45.5" width="4.5" height="4.5" fill="#0D382B" rx="0.5" />
+                <rect x="51.5" y="45.5" width="4.5" height="4.5" fill="#0D382B" rx="0.5" />
+                <path d="M 37 59 L 51 73 L 90 32" stroke="#8A9A90" stroke-width="7" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+              <div style="display: flex; flex-direction: column;">
+                <div
+                  style="font-size: 1.4rem; font-weight: 800; letter-spacing: -0.03em; line-height: 1.05; display: flex; align-items: baseline;">
+                  <span style="color: #0D382B;">Verifi</span><span style="color: #6F7E75; font-weight: 600;">rent</span>
+                </div>
+                <span
+                  style="font-size: 0.55rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #5C6A63; margin-top: 0.15rem;">VERIFY.
+                  RENT. RELAX.</span>
+              </div>
+            </a>
+          </div>
+          <div style="font-size: 1rem; font-weight: 600; color: var(--color-forest); margin-bottom: 0.5rem;">Know
+            Before You Rent.</div>
+          <p style="font-size: 0.85rem; line-height: 1.55; color: var(--color-text-secondary);">
+            The neighbourhood intelligence platform turning hidden rental realities into transparent, human-verified
+            truth.
+          </p>
+        </div>
+
+        <div>
+          <div
+            style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-text-subtle); margin-bottom: 1rem;">
+            Platform Navigation</div>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.625rem;">
+            <li><a href="#hero" class="nav-link">Home</a></li>
+            <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+            <li><a href="#intelligence" class="nav-link">Intelligence</a></li>
+            <li><a href="#compare" class="nav-link">Compare Realities</a></li>
+            <li><a href="#trust" class="nav-link">Trust & Accuracy</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div
+            style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-text-subtle); margin-bottom: 1rem;">
+            Initial Deployment</div>
+          <div style="font-size: 0.875rem; font-weight: 600; color: var(--color-text); margin-bottom: 0.35rem;">Lagos,
+            Nigeria</div>
+          <p style="font-size: 0.8rem; color: var(--color-text-secondary); max-width: 240px; line-height: 1.5;">
+            Audits covering Mainland (Ikeja, Yaba, Surulere) & Island (Lekki Phase 1, Victoria Island, Ikoyi).
+          </p>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 VerifiRent Technologies. All rights reserved. Launching in Lagos, Nigeria.</div>
+        <div>AI Generated. Human Verified.</div>
+      </div>
+    </div>
+  </footer>
+
+  </div>
+
+  <!-- Floating Back to Top Button -->
+  <button type="button" id="backToTopBtn" class="back-to-top-btn" aria-label="Back to Top">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+      stroke-linecap="round" stroke-linejoin="round">
+      <path d="m5 12 7-7 7 7" />
+      <path d="M12 19V5" />
+    </svg>
+    <span>Back to Top</span>
+  </button>
+
+  <!-- Application Logic -->
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
